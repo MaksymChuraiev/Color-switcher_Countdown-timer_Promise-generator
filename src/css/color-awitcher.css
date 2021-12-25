@@ -1,0 +1,25 @@
+body {
+  background-color: #2d0d4b;
+  text-align: center;
+}
+
+p {
+  margin-top: 30vh;
+}
+
+a {
+  background-color: aqua;
+  padding: 10px 160px;
+  text-decoration: none;
+  border-radius: 10px;
+}
+
+button {
+  background-color: aqua;
+  padding: 10px;
+  border-radius: 10px;
+  border-color: #2d0d4b;
+  font-size: 20px;
+  margin-left: 30px;
+  margin-top: 50px;
+}
