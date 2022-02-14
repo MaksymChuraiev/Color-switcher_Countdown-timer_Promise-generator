@@ -1,5 +1,7 @@
 body {
-  background-color: #2d0d4b;
+  margin: 0;
+  padding: 0;
+  background-color: #fc5f9b;
   text-align: center;
 }
 
@@ -15,11 +17,27 @@ a {
 }
 
 button {
-  background-color: aqua;
+  /* background-color: aqua;
   padding: 10px;
   border-radius: 10px;
   border-color: #2d0d4b;
   font-size: 20px;
   margin-left: 30px;
-  margin-top: 50px;
+  margin-top: 50px; */
+  position: relative;
+  background: none;
+  border: none;
+  display: inline-block;
+  padding: 15px 30px;
+  color: #2196f3;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-size: 24px;
+  overflow: hidden;
+}
+
+button:hover {
+  color: #255784;
+  background: #2196f3;
+  box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 80px #2196f3;
 }

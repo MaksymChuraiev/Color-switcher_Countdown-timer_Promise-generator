@@ -3,11 +3,11 @@
 }
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
-    Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell,
+    'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #fafafa;
+  background-color: #f7f7f7;
   color: #212121;
   line-height: 1.5;
 }
@@ -15,4 +15,101 @@ body {
 img {
   display: block;
   max-width: 100%;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  padding-left: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.nav {
+  margin-top: 50px;
+  margin-left: 100px;
+}
+
+.container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.box {
+  position: relative;
+  width: 400px;
+  height: 100px;
+  background: #fff;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+  box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.025);
+}
+
+.box:nth-child(1) {
+  transform: translateX(-70px);
+}
+
+.box:nth-child(3) {
+  transform: translateX(70px);
+}
+
+.container:hover .box:nth-child(1) {
+  transform: translateX(0);
+}
+
+.container:hover .box:nth-child(3) {
+  transform: translateX(0);
+}
+
+.box::before {
+  content: '';
+  position: absolute;
+  width: 6px;
+  height: 100%;
+  background: var(--clr);
+  transition: 0.5s ease-in-out;
+}
+
+.box:hover::before {
+  width: 100%;
+}
+
+.content {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.icon {
+  position: relative;
+  min-width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 36px;
+  font-weight: 600;
+  color: var(--clr);
+  transition: 0.5s ease-in-out;
+}
+
+.box:hover .icon {
+  color: #fff;
+}
+
+.text p {
+  font-size: 28px;
+  font-weight: 600;
+  color: var(--clr);
+  transition: 0.5s ease-in-out;
+}
+
+.box:hover .text p {
+  color: #fff;
 }
