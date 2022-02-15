@@ -3,10 +3,10 @@
   "version": "1.1.0",
   "description": "",
   "main": "index.js",
-  "homepage": "https://MaksymChuraiev.github.io/goit-js-hw-09",
+  "homepage": "https://MaksymChuraiev.github.io/Color-switcher_Countdown-timer_Promise-generator",
   "scripts": {
     "dev": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /goit-js-hw-09/"
+    "build": "parcel build src/*.html --public-url /Color-switcher_Countdown-timer_Promise-generator/"
   },
   "repository": {
     "type": "git",
@@ -27,6 +27,6 @@
   },
   "dependencies": {
     "flatpickr": "^4.6.9",
-    "notiflix": "^3.2.2"
+    "notiflix": "^3.2.4"
   }
 }
