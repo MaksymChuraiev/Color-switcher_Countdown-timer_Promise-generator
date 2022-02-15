@@ -5,4 +5,4 @@ var t,o=arguments[3];!function(o,i){"function"==typeof t&&t.amd?t([],function(){
 },{}],"GyVV":[function(require,module,exports) {
 "use strict";var e=require("notiflix/build/notiflix-notify-aio");const t=document.querySelector(".form");function i(e,t){return new Promise((i,r)=>{const o=Math.random()>.3;setTimeout(()=>{o?i({position:e,delay:t}):r({position:e,delay:t})},t)})}function r(r){r.preventDefault();let o=Number(r.currentTarget.delay.value),n=Number(r.currentTarget.step.value),u=Number(r.currentTarget.amount.value);for(let t=1;t<=u;t+=1)i(t,o).then(({position:t,delay:i})=>{e.Notify.success(`✅ Fulfilled promise ${t} in ${i}ms`)}).catch(({position:t,delay:i})=>{e.Notify.failure(`❌ Rejected promise ${t} in ${i}ms`)}),o+=n;t.reset()}t.addEventListener("submit",r);
 },{"notiflix/build/notiflix-notify-aio":"MeeU"}]},{},["GyVV"], null)
-//# sourceMappingURL=/goit-js-hw-09/03-promises.b499ed1e.js.map
+//# sourceMappingURL=/Color-switcher_Countdown-timer_Promise-generator/03-promises.ebf22586.js.map
