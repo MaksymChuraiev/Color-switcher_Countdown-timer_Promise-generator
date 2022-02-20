@@ -57,6 +57,23 @@ function onStartTimer() {
     refs.hours.textContent = addLeadingZero(hours);
     refs.minutes.textContent = addLeadingZero(minutes);
     refs.seconds.textContent = addLeadingZero(seconds);
+
+    refs.days.classList.add('light');
+    refs.hours.classList.add('light');
+    refs.minutes.classList.add('light');
+    refs.seconds.classList.add('light');
+
+    if (
+      refs.days.textContent === '00' &&
+      refs.hours.textContent === '00' &&
+      refs.minutes.textContent === '00' &&
+      refs.seconds.textContent === '00'
+    ) {
+      refs.days.classList.remove('light');
+      refs.hours.classList.remove('light');
+      refs.minutes.classList.remove('light');
+      refs.seconds.classList.remove('light');
+    }
   }, 1000);
 }
 
@@ -78,3 +95,15 @@ function convertMs(ms) {
 
   return { days, hours, minutes, seconds };
 }
+
+// if (
+//   refs.days.textContent === 00 &&
+//   refs.hours.textContent === 00 &&
+//   refs.minutes.textContent === 00 &&
+//   refs.seconds.textContent === 00
+// ) {
+//   refs.days.classList.remove('light');
+//   refs.hours.classList.remove('light');
+//   refs.minutes.classList.remove('light');
+//   refs.seconds.classList.remove('light');
+// }

@@ -8,13 +8,12 @@
     <link rel="stylesheet" href="css/timer.css" />
   </head>
   <body>
-    <!-- <p><a href="index.html">Go back</a></p> -->
     <div class="nav">
       <div class="container">
         <div class="box" style="--clr: #a362ea">
           <a href="index.html">
             <div class="content">
-              <div class="icon">&#10094</div>
+              <div class="icon">&#10094;</div>
               <div class="text">
                 <p>Go back</p>
               </div>
@@ -24,33 +23,38 @@
       </div>
     </div>
 
-    <div class="wraper">
-    <input type="text" id="datetime-picker" />
-    <button class="button" type="button" data-start>
-              <span class="span1"></span>
-        <span class="span2"></span>
-        <span class="span3"></span>
-        <span class="span4"></span>
-      Start
-    </button>
-</div>
+    <div class="timer-box">
+      <div class="wraper">
+        <div class="inputBox">
+          <input type="text" id="datetime-picker" />
+          <label>Your date</label>
+        </div>
+        <button class="button" type="button" data-start>
+          <span class="span1"></span>
+          <span class="span2"></span>
+          <span class="span3"></span>
+          <span class="span4"></span>
+          Start
+        </button>
+      </div>
 
-    <div class="timer">
-      <div class="field">
-        <span class="value" data-days>00</span>
-        <span class="label">Days</span>
-      </div>
-      <div class="field">
-        <span class="value" data-hours>00</span>
-        <span class="label">Hours</span>
-      </div>
-      <div class="field">
-        <span class="value" data-minutes>00</span>
-        <span class="label">Minutes</span>
-      </div>
-      <div class="field">
-        <span class="value" data-seconds>00</span>
-        <span class="label">Seconds</span>
+      <div class="timer">
+        <div class="field">
+          <span class="value" data-days>00</span>
+          <span class="label">Days</span>
+        </div>
+        <div class="field">
+          <span class="value" data-hours>00</span>
+          <span class="label">Hours</span>
+        </div>
+        <div class="field">
+          <span class="value" data-minutes>00</span>
+          <span class="label">Minutes</span>
+        </div>
+        <div class="field">
+          <span class="value" data-seconds>00</span>
+          <span class="label">Seconds</span>
+        </div>
       </div>
     </div>
 

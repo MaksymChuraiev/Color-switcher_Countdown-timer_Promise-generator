@@ -5,13 +5,22 @@ body {
 }
 
 .button-thumb {
-  text-align: center;
-  margin-top: 200px;
+  /* text-align: center;
+  margin-top: 200px; */
+  margin: 200px auto;
+  width: 400px;
+  padding: 40px;
+  background: rgba(0, 0, 0, 0.8);
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .button {
-  margin-left: 30px;
-  margin-top: 50px;
+  /* margin-left: 30px;
+  margin-top: 50px; */
   width: 150px;
   position: relative;
   background: rgba(10, 44, 75, 0.4);
@@ -24,6 +33,10 @@ body {
   font-size: 24px;
   overflow: hidden;
   transition: 0.2s;
+}
+
+.button:last-child {
+  margin-left: 30px;
 }
 
 .button:hover {

@@ -2,29 +2,71 @@ body {
   background-color: #a362ea;
 }
 
-/* p {
-  margin-top: 30vh;
+.timer-box {
+  margin: 100px auto;
+  width: 800px;
+  padding: 40px;
+  background: rgba(0, 0, 0, 0.8);
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
 }
 
-a {
-  background-color: aqua;
-  padding: 10px 160px;
-  text-decoration: none;
-  border-radius: 10px;
-} */
+.inputBox {
+  position: relative;
+  width: 400px;
+}
+
+.inputBox input {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+  letter-spacing: 1px;
+  color: transparent;
+  /* margin-bottom: 30px; */
+  border: none;
+  border-bottom: 1px solid #fff;
+  outline: none;
+  background: transparent;
+}
+
+.inputBox input:focus,
+.inputBox input:valid {
+  color: #fff;
+  transition: 0.8s;
+}
+
+.inputBox label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  pointer-events: none;
+  transition: 0.5s;
+}
+
+.inputBox input:focus ~ label,
+.inputBox input:valid ~ label {
+  top: -18px;
+  left: 0;
+  color: #03a9f4;
+  font-size: 12px;
+}
 
 .wraper {
-  text-align: center;
-  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-input {
+/* input {
   background-color: #ffffff;
   padding: 27px 30px;
   height: 50px;
   border-color: #2196f3;
   font-size: 24px;
-}
+} */
 
 /* button {
   background-color: aqua;
@@ -37,7 +79,7 @@ input {
 
 .button {
   margin-left: 30px;
-  margin-top: 50px;
+  /* margin-top: 50px; */
   width: 150px;
   position: relative;
   background: rgba(10, 44, 75, 0.4);
@@ -50,6 +92,7 @@ input {
   font-size: 24px;
   overflow: hidden;
   transition: 0.2s;
+  cursor: pointer;
 }
 
 .button:hover {
@@ -153,4 +196,8 @@ input {
 
 .label {
   display: none;
+}
+
+.light {
+  text-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 80px #2196f3;
 }
